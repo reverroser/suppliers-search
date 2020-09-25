@@ -6,7 +6,6 @@ export const DropdownContainer = styled.div`
 `;
 
 export const DropdownSelect = styled.div`
-  font-family: ${({ theme }) => theme.font.content};
   padding: ${({ theme }) =>
     `${theme.spacingUnit * 1.5}px ${theme.spacingUnit * 3}px`};
   background-color: ${({ theme, isOpen }) =>
