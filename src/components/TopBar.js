@@ -5,8 +5,8 @@ const TopBarContainer = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
-  height: 72px;
-  padding: 0 2rem;
+  height: ${({ theme }) => theme.spacingUnit * 9}px;
+  padding: 0 ${({ theme }) => theme.spacingUnit * 3}px;
   border-bottom: thin solid ${({ theme }) => theme.colors.grey[20]};
 `;
 

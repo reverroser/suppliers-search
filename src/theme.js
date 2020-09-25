@@ -1,4 +1,7 @@
-export default {
+import React from "react";
+import { ThemeProvider } from "styled-components";
+
+const theme = {
   font: {
     header: "'Noto Sans JP', sans-serif",
     content: "'Roboto', sans-serif"
@@ -16,5 +19,14 @@ export default {
       50: "#9E9E9E"
     }
   },
+  zIndex: {
+    dropdown: 2
+  },
   spacingUnit: 8
 };
+
+const Theme = ({ children }) => (
+  <ThemeProvider theme={theme}>{children}</ThemeProvider>
+);
+
+export default Theme;
