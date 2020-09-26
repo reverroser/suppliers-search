@@ -14,7 +14,7 @@ import { SuppliersGrid, SuppliersContainer } from "./Supplier.styles";
 const Suppliers = () => {
   const searchParams = new URLSearchParams();
 
-  const [pageCount, setPageCount] = useState();
+  const [pageCount, setPageCount] = useState(0);
 
   const [suppliersData, setSuppliersData] = useState();
 
@@ -61,6 +61,12 @@ const Suppliers = () => {
     // eslint-disable-next-line
   }, [pageCount, searchTerm, supplierType]);
 
+  useEffect(() => {
+    // Resets page count when changing supplier type
+    setPageCount(0);
+    // eslint-disable-next-line
+  }, [supplierType]);
+
   return (
     <div>
       <TopBar>
@@ -79,6 +85,7 @@ const Suppliers = () => {
             ))}
           </SuppliersGrid>
           <ReactPaginate
+            forcePage={pageCount}
             pageCount={suppliersData.numPages}
             marginPagesDisplayed={1}
             pageRangeDisplayed={2}
