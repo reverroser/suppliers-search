@@ -7,7 +7,7 @@ export const SearchInputContainer = styled.div`
   padding: ${({ theme }) => theme.spacingUnit * 1.5}px;
   background-color: ${({ theme, hasFocus }) =>
     hasFocus ? theme.colors.white : theme.colors.grey[20]};
-  border-radius: ${({ theme }) => theme.spacingUnit * 0.5}px;
+  border-radius: ${({ theme }) => theme.spacingUnit}px;
   box-shadow: ${({ theme, hasFocus }) =>
     hasFocus ? `0 0 8px 2px ${rgba(theme.colors.primary, 0.4)}` : ""};
   border: thin solid
