@@ -9,6 +9,6 @@ export const TopBarContainer = styled.div`
   border-bottom: thin solid ${({ theme }) => theme.colors.grey[20]};
 
   @media (min-width: 768px) {
-    padding: 0 ${({ theme }) => theme.spacingUnit * 3}px;
+    padding: 0 ${({ theme }) => theme.spacingUnit * 10}px;
   }
 `;

@@ -34,7 +34,7 @@ export const DropdownSelect = styled.div`
 export const DropdownOptions = styled.div`
   position: absolute;
   min-width: 180px;
-  box-shadow: 1px 1px 6px 1px ${({ theme }) => rgba(theme.colors.black, 0.1)};
+  box-shadow: ${({ theme }) => theme.boxShadow.default};
   border-radius: ${({ theme }) => theme.spacingUnit}px;
   margin-top: ${({ theme }) => theme.spacingUnit}px;
   padding: ${({ theme }) => theme.spacingUnit}px;

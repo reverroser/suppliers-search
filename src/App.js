@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import Theme from "./theme";
 
@@ -22,6 +24,14 @@ const AppContainer = styled.div`
 const App = () => (
   <Theme>
     <AppContainer>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        closeOnClick
+        rtl={false}
+        pauseOnHover
+      />
       <Suppliers />
     </AppContainer>
   </Theme>
