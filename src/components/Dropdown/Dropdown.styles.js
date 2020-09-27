@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { rgba } from "polished";
 
 export const DropdownContainer = styled.div`
   position: relative;
