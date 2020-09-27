@@ -1,4 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Suppliers Search
+
+This project is a technical task for [Feast it](https://feast-it.com/) and was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+I created this project taking into consideration Scalability and Reusability. This is why the code is split into pages and components. This way, a router can be added if needed in the future and, the components have a specific styling but are not tight to display the suppliers nor any data related to it. Instead, they use props and patterns to render the data being agnostic of what it is passed to them.
+
+Besides that, my goal was to show not just my JS/React but my styling skills. This is why I chose styled-components, so I apply an on-trend pattern (CSS-in-JS) following the component mindset of React and the whole application. And spending more time in the micro-interactions and the look and feel of the UI.
+
+## Dependencies
+
+### [styled-components](https://github.com/styled-components/styled-components)
+
+When reading about emotion and its CSS-in-JS approach, I bumped into styled-components. I felt that using components instead of classes, made a lot of sense, and it was aligned to the approach I wanted for this specific project.
+
+Challenging myself, I decided to use this library instead that "playing-safe" using the common CSS/SCSS for the styling.
+
+### [polished](https://github.com/styled-components/polished)
+
+I needed to get some extra methods like `rgba` since styled-components does not provide any kind of Sass-style helper functions nor mixins and it´s created by the [styled-components
+](https://github.com/styled-components) team.
+
+### [react-outside-click-handler](https://github.com/airbnb/react-outside-click-handler)
+
+Because the dropdown component has to close itself on clicking outside, I preferred to use this Airbnb's library instead of creating the same exact functionality by myself.
+
+### [react-paginate](https://github.com/AdeleD/react-paginate)
+
+This library provides the functionality/UI that was needed for building the pagination.
+
+### [react-toastify](https://github.com/fkhadra/react-toastify)
+
+I included this dependency as a quick and nice way of showing information to the user when something goes wrong. Also, having in mind the scalability of the project, this could be used to provide any kind of feedback that the user may need at any time.
 
 ## Available Scripts
 
