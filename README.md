@@ -1,5 +1,7 @@
 # Suppliers Search
 
+[Last deployed version](https://fervent-colden-26f1e5.netlify.app/)
+
 This project is a technical task for [Feast it](https://feast-it.com/) and was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 I created this project taking into consideration Scalability and Reusability. This is why the code is split into pages and components. This way, a router can be added if needed in the future and, the components have a specific styling but are not tight to display the suppliers nor any data related to it. Instead, they use props and patterns to render the data being agnostic of what it is passed to them.
